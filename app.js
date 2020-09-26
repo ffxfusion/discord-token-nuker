@@ -2,8 +2,6 @@ const request = require("superagent");
 const discord = require("discord.js");
 const client = new discord.Client();
 
-process.on("error", () => console.log("some error happend but nothing to worry about"));
-
 let token;
 process.stdout.write("enter token: ");
 process.stdin.once("data", input => {
